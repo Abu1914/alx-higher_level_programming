@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-# i represents first digit and j reps second digit
-
-for i in range(10):
+for i in range(9):
     for j in range(i + 1, 10):
-        print("{0}{1}".format(i, j), end="")
-        if i == 8 and j == 9:
-            print("")
-else:
-    print(", ", end="")
+        if i * 10 + j < 89:
+            print("{:d}{:d}".format(i, j), end=", ")
+print("{:d}".format(89))
