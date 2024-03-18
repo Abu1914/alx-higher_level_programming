@@ -13,10 +13,10 @@ if __name__ == "__main__":
     excuted if imported"""
 
 db = MySQLdb.connect(host="localhost",
-                    port=3306,
-                    user=argv[1],
-                    passwd=argv[2],
-                    database=argv[3])
+                     port=3306,
+                     user=argv[1],
+                     passwd=argv[2],
+                     database=argv[3])
 cur = db.cursor()
 query = """SELECT *
         FROM states
