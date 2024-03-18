@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-A script that lists all states from the
-database hbtn_0e_0_usa
-The script takes 3 arguments
+    A script that lists all states from the
+    database hbtn_0e_0_usa
+    The script takes 3 arguments
 """
 import MySQLdb
 from sys import argv
