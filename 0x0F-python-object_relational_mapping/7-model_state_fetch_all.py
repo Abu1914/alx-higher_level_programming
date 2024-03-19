@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-A python script that
-Lists all state objects from the database
-hbtn_0e_6_usa
+    A python script that
+    Lists all state objects from the database
+    hbtn_0e_6_usa
 """
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -13,7 +13,7 @@ if __name__ == "__main__":
     """so if imported does not execute"""
 
     engine = create_engine("mysql://{}:{}@localhost:3306/{}".
-                            format(argv[1], argv[2], argv[3]))
+                           format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
 
