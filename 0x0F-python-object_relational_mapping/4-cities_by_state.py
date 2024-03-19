@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-A script that lists all cities
-from the database hbtn_0e_4_usa
-Sorted in ascending by cities id
+    A script that lists all cities
+    from the database hbtn_0e_4_usa
+    Sorted in ascending by cities id
 """
 import MySQLdb
 from sys import argv
@@ -13,10 +13,10 @@ if __name__ == "__main__":
     executed if imported"""
 
     db = MySQLdb.connect(host="localhost",
-                        port=3306,
-                        user=argv[1],
-                        passwd=argv[2],
-                        database=argv[3])
+                         port=3306,
+                         user=argv[1],
+                         passwd=argv[2],
+                         database=argv[3])
     cur = db.cursor()
     query = """SELECT cities.id, cities.name, states.name
                 FROM states
