@@ -19,10 +19,10 @@ if __name__ == "__main__":
                          database=argv[3])
     cur = db.cursor()
     query = """SELECT cities.id, cities.name, states.name
-                FROM states
-                JOIN cities
-                WHERE states.id = cities.state_id
-                ORDER BY cities.id"""
+               FROM states
+               JOIN cities
+               WHERE states.id = cities.state_id
+               ORDER BY cities.id"""
 
     cur.execute(query)
     for city in cur.fetchall():
