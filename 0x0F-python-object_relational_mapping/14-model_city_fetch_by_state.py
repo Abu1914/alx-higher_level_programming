@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-the module prints all City objects
-from the database hbtn_0e_14_usa
+    the module prints all City objects
+    from the database hbtn_0e_14_usa
 """
 from sqlalchemy.orm import sessionmaker
 from sys import argv
@@ -13,7 +13,7 @@ from model_city import City
 if __name__ == "__main__":
     """does not execute when imported"""
     engine = create_engine("mysql://{}:{}@localhost:3306/{}".
-                            format(argv[1], argv[2], argv[3]))
+                           format(argv[1], argv[2], argv[3]))
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
