@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines the class State
+    Defines the class State
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
@@ -11,8 +11,8 @@ Base = declarative_base()
 
 class State(Base):
     """
-    the class State
-    inherits from Base
+        the class State
+        inherits from Base
     """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)

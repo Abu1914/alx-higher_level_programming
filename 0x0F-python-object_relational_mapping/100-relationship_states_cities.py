@@ -1,6 +1,8 @@
-reates the State California with the City
-San Francisco from the database
-hbtn_0e_100_usa
+#!/usr/bin/python3
+"""
+    creates the State California with the City
+    San Francisco from the database
+    hbtn_0e_100_usa
 """
 from relationship_state import Base, State
 from relationship_city import City
@@ -12,7 +14,7 @@ from sqlalchemy import create_engine
 if __name__ == "__main__":
     """does not execute when imported"""
     engine = create_engine("mysql://{}:{}@localhost:3306/{}".
-                            format(argv[1], argv[2], argv[3]))
+                           format(argv[1], argv[2], argv[3]))
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
