@@ -1,3 +1,3 @@
 #!/bin/bash
-# Get thebyte size of the HTTP response header for a given URL.
-curl -s "$1" | wc -c
+# Takes a URL, send a request to the URL and displays the size of the body of the response
+curl -sI "$1" | grep -oP '(?<=Content-Length: )\d+'
