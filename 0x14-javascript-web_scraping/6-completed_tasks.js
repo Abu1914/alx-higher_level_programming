@@ -17,5 +17,5 @@ request(url, function (err, response, body) {
       }
     });
     console.log(dic);
-   }
- });
+  }
+});

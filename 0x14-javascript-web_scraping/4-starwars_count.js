@@ -15,10 +15,10 @@ request(argv[2], function (err, response, body) {
       const actors = data[a].characters;
       for (const b in actors) {
         if (actors[b].includes('18')) {
-           number += 1;
+          number += 1;
         }
       }
     }
     console.log(number);
-   }
+  }
 });

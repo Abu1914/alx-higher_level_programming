@@ -14,5 +14,5 @@ request(argv[2], function (err, response, body) {
         console.error(error);
       }
     });
-   }
- });
+  }
+});
